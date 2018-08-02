@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2018.04`, `latest` (*Dockerfile*)](https://github.com/perl6/docker/blob/aff1beeb74853acb6d04c7335ef56c56f0270407/Dockerfile)
+-	[`latest`, `2018.04` (*Dockerfile*)](https://github.com/perl6/docker/blob/aff1beeb74853acb6d04c7335ef56c56f0270407/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rakudo-star/badge/icon) (`arm64v8/rakudo-star` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/rakudo-star/)
 
 # Quick reference
 
@@ -30,7 +32,7 @@ WARNING:
 	[the Perl 6 Community](https://github.com/perl6/docker)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/)
+	[`amd64`](https://hub.docker.com/r/amd64/rakudo-star/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rakudo-star/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rakudo-star/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rakudo-star) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rakudo-star))  
@@ -67,7 +69,7 @@ Perl 6 Language Documentation: [http://doc.perl6.org/](http://doc.perl6.org/)
 Simply running a container with the image will launch a Perl 6 REPL:
 
 ```console
-$ docker run -it rakudo-star
+$ docker run -it arm64v8/rakudo-star
 > say 'Hello, Perl!'
 Hello, Perl!
 ```
@@ -75,7 +77,7 @@ Hello, Perl!
 You can also provide perl6 command line switches to `docker run`:
 
 ```console
-$ docker run -it rakudo-star -e 'say "Hello!"'
+$ docker run -it arm64v8/rakudo-star -e 'say "Hello!"'
 ```
 
 # Contributing/Getting Help
